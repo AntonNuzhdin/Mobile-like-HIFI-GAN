@@ -14,7 +14,7 @@ And move all wav files to `LJSpeech-1.1/wavs`
 
 ## Training
 ```
-!python train.py --config config_4m.json --checkpoint_path --num_disc <amount of discriminators> --factor <factor to divide disc's channels amount>
+python train.py --config config_4m.json --checkpoint_path --num_disc <amount of discriminators> --factor <factor to divide disc's channels amount>
 ```
 
 Чтобы обучить другие версии модели, нужно указать другой config.json из репозитория

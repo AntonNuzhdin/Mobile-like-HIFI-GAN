@@ -1,6 +1,6 @@
 # Mobile-like HIFI-GAN
 
-### Anton Nuzhdin, Coursework, 3 year
+### Anton Nuzhdin, Coursework, 3d year
 
 This repository contains the code for my course project on improving HIFI-GAN. We introduced a model that is an efficient modification of the original work from this [paper](https://arxiv.org/abs/2010.05646), which also delivers better quality.
 

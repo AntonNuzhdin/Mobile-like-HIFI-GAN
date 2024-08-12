@@ -1,8 +1,8 @@
 # Mobile-like HIFI-GAN
 
-### Антон Нуждин, курсовая работа, 3 курс
+### Anton Nuzhdin, Coursework, 3 year
 
-В этом репозитории находится код моей курсовой работы по улучшению HIFI-GAN. Мы представили модель, которая является эффективной модификацией оригинальной работы из [статьи](https://arxiv.org/abs/2010.05646), которая также предоставляет лучшее качество.
+This repository contains the code for my course project on improving HIFI-GAN. We introduced a model that is an efficient modification of the original work from this [paper](https://arxiv.org/abs/2010.05646), which also delivers better quality.
 
 ![b01165ba-031f-4c1f-b072-5281301e2e72](https://github.com/user-attachments/assets/4de87f97-5c31-4a9a-bda8-b60abf6e8fb8)
 
@@ -20,13 +20,12 @@ And move all wav files to `LJSpeech-1.1/wavs`
 python train.py --config config_4m.json --checkpoint_path --num_disc <amount of discriminators> --factor <factor to divide disc's channels amount>
 ```
 
-Чтобы обучить другие версии модели, нужно указать другой config.json из репозитория
-
+To train different model versions, just provide the corresponding config.json from the repo
 
 ## Inference from wav file
 
 ```
 python inference.py --checkpoint_file [generator checkpoint file path]
 ```
-Сгенерированные аудио будут сохранены в `generated_files` 
-Эту директорию можно менять с помощью опции `--output_dir`.
+Generated audios will be saved in `generated_files` 
+One can provide custom save directiry through `--output_dir`.
